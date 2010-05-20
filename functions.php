@@ -1,7 +1,7 @@
 <?php
 function url_get_contents($file){
 if (ini_get('allow_url_fopen') == '1') {
-  return file_get_contents(file); // use fopen() or file_get_contents() 
+  return file_get_contents($file); // use fopen() or file_get_contents() 
 } 
    // initialize a new curl resource
    $ch = curl_init(); 
